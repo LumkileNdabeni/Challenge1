@@ -4,6 +4,7 @@ let secondCard = 11
 let sum = firstCard + secondCard + 4
 let hasBlackJack = false
 let isAlive = true
+let message = "" 
 
 console.log(sum)
 
@@ -17,3 +18,4 @@ if (sum <= 20) {
     isAlive = false
 }
 console.log(isAlive)
+console.log(message)
