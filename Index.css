@@ -1,10 +1,27 @@
 body {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fgreen-table&psig=AOvVaw2Q0mOz4_j18J5YXBwyCE5W&ust=1721901543511000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCODRvpm3v4cDFQAAAAAdAAAAABAE");
+background-image: url("images/BlackJack\ table.jpeg");
 background-size: cover;
 text-align: center;
 color: white;
 }
 h1 {
     color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+button {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
