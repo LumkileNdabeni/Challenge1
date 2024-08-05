@@ -1,4 +1,4 @@
-let player = {
+let player = { // Player information
     name: "Lumkile",
     chips: 200
 }
@@ -15,7 +15,7 @@ let playerEl = document.getElementById("player-el")
 
 playerEl.textContent = player.name + ": $" + player.chips
 
-function getRandomCard() {
+function getRandomCard() { // Generates ramdom card, 10 for face cards and 11 for Ace
     let randomNumber = Math.floor( Math.random()*13 ) + 1
     if (randomNumber > 10) {
         return 10
@@ -26,7 +26,7 @@ function getRandomCard() {
     }
 }
 
-function startGame() {
+function startGame() { // Starts game by dealing 2 random cards
     isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
@@ -35,7 +35,7 @@ function startGame() {
     renderGame()
 }
 
-function renderGame() {
+function renderGame() { // Updates game display and displays message
     cardsEl.textContent = "Cards: "
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " "
@@ -55,7 +55,7 @@ function renderGame() {
 }
 
 
-function newCard() {
+function newCard() { // Allows player to draw a new card if they are still in the game
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard()
         sum += card
